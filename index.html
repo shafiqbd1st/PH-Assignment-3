@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"  data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- tailwind css and DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind CSS Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(171, 239, 95)',
+                        body: ''
+                    },
+                    fontFamily: {
+                        Manrope: 'Manrope',
+                    },
+                    backgroundImage: {
+                        bgImage: "url('./assets/bg.jpg')",
+                    },
+                },
+            },
+        }
+    </script>
+
+</head>
+<body class="font-Manrope">
+
+    <!-- header section start -->
+    <header class=" bg-[#F6F6F6]"> 
+        <nav class="w-11/12 mx-auto">
+            <div class="navbar p-0 py-2">
+                <div class="navbar-start">
+                    <span class="bg-primary rounded-full mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </span>
+                    <a href="#" class="text-4xl font-bold">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium text-[#737373] ">
+                        <li class="font-bold text-[#494949]"><a href="#" class="px-2 xl:p-3">Home</a></li>
+                        <li class=""><a href="#" class="px-2 xl:p-3">Portfolio</a></li>
+                        <li class=""><a href="#" class="px-2 xl:p-3"> Services</a></li>
+                        <li class=""><a href="#" class="px-2 xl:p-3">Blog</a></li>
+                        <li class=""><a href="#" class="px-2 xl:p-3">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <div class="hidden sm:flex justify-between items-center gap-4 font-semibold xl:text-xl">
+                            <i class="fas fa-search bg-white p-2 xl:p-3  rounded-full"></i>
+                            <i class="fas fa-shopping-cart bg-white p-2  xl:p-3 rounded-full"></i>
+                        
+                        <button class="flex justify-center items-center bg-primary gap-2 p-3 font-bold rounded-full"> Book Consult 
+                            <span class=" bg-black text-white rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /></svg>
+                            </span>
+                        </button>
+
+                    </div>
+                    
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="font-medium text-lg lg:hidden">
+                            <button class="px-3 py-1 bg-white rounded-lg ml-4"><i class="fas fa-bars"></i></button>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-44 p-2 shadow text-lg font-medium right-0">
+                            <li class="font-bold text-[#494949]"><a href="#">Home</a></li>
+                            <li class=""><a href="#"> Services</a></li>
+                            <li class=""><a href="#">Portfolio</a></li>
+                            <li class=""><a href="#">Blog</a></li>
+                            <li class=""><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
